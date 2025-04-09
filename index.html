@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock, Paper, Scissors Game</h1>
+        <h1>"Rock, Paper, Scissors is a game of strategy and luck. Pick wisely!"
+
+        </h1>
+        <div id="welcome-section">
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username" placeholder="Your Name">
+            <button id="start-game">Start Game</button>
+        </div>
+        <div id="game-section" class="hidden">
+            <h2>Welcome, <span id="player-name">Player</span>!</h2>
+            <p>🪨📄✂️ Rock, Paper, Scissors - Basic Rules
+                Two players (or player vs computer) choose one of three options at the same time: Rock 🪨, Paper 📄, Scissors ✂️
+                 <br>How to win: Rock beats Scissors , Scissors beats Paper , Paper beats Rock 
+                 <br>If both players choose the same thing, it's a Draw!</p>
+            <p>Make your choice:</p>
+            <div class="choices">
+                <button class="choice-btn" data-choice="rock">✊ Rock</button>
+                <button class="choice-btn" data-choice="paper">✋ Paper</button>
+                <button class="choice-btn" data-choice="scissors">✌️ Scissors</button>
+            </div>
+            <div id="results">
+                <p>Your choice: <span id="player-choice">-</span></p>
+                <p>Computer's choice: <span id="computer-choice">-</span></p>
+                <p>Result: <span id="result">-</span></p>
+            </div>
+            <div id="scores">
+                <p><span id="player-name-score">Player</span>'s Score: <span id="player-score">0</span></p>
+                <p>Computer's Score: <span id="computer-score">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
